@@ -7,19 +7,51 @@
 //
 
 import UIKit
+import Foundation
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,CLLocationManagerDelegate {
 
+    var locationManager:CLLocationManager = CLLocationManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        locationManager.activityType = .automotiveNavigation
+        locationManager.desiredAccuracy = 1
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        locationManager.allowsBackgroundLocationUpdates = true
+        locationManager.pausesLocationUpdatesAutomatically = true
+        locationManager.showsBackgroundLocationIndicator = true
+        locationManager.delegate = self
+        
+        
+        locationManager.requestAlwaysAuthorization()
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationManager.startUpdatingLocation()
+    
     }
+    
+    
 
+    func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
+        print("locationmanager: didPauseUpdates")
+    }
+    
+    func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
+        print("locationmanager: didResumeUpdates")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("locationmanager: didUpdateLocations")
+    }
+    
 
+    
+    
 }
 
