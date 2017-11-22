@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Application needs always and in use permission</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Application needs to use Location Service</string>
+	<key>NSLocationUsageDescription</key>
+	<string>DEscrption needed</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>When in use permission needed </string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
