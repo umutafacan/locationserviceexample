@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import CoreLocation
+import NSLogger
 
 
 class ViewController: UIViewController,CLLocationManagerDelegate {
@@ -41,19 +42,19 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     
     @objc func stopUpdates(){
         self.locationManager.stopUpdatingLocation()
-        NSLog("locationmanager: didStopUpdates")
+        LoggerApp(1,"locationmanager: didStopUpdates")
     }
     
     func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-        NSLog("locationmanager: didPauseUpdates")
+        LoggerApp(1,"locationmanager: didPauseUpdates")
     }
     
     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
-        NSLog("locationmanager: didResumeUpdates")
+        LoggerApp(1,"locationmanager: didResumeUpdates")
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        NSLog("locationmanager: didUpdateLocations")
+        LoggerApp(1,"locationmanager: didUpdateLocations")
         let now = Date()
         let latest = UserDefaults.standard.object(forKey: "openedTime")
 //        if now.timeIntervalSince(latest as! Date) > 15.0 {
