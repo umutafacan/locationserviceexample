@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C10E8F91FC6BA7800170838 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E8F81FC6BA7800170838 /* API.swift */; };
+		4C10E8FB1FC6BD4600170838 /* LocationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E8FA1FC6BD4600170838 /* LocationNetwork.swift */; };
+		4C10E8FF1FC6E49E00170838 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C10E8FE1FC6E49E00170838 /* MapKit.framework */; };
+		4C10E9011FC702E000170838 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C10E9001FC702E000170838 /* LocationManager.swift */; };
 		4CCF62F21FC4505E009098D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF62F11FC4505E009098D7 /* AppDelegate.swift */; };
 		4CCF62F41FC4505E009098D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF62F31FC4505E009098D7 /* ViewController.swift */; };
 		4CCF62F71FC4505E009098D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF62F51FC4505E009098D7 /* Main.storyboard */; };
 		4CCF62F91FC4505E009098D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF62F81FC4505E009098D7 /* Assets.xcassets */; };
 		4CCF62FC1FC4505E009098D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF62FA1FC4505E009098D7 /* LaunchScreen.storyboard */; };
+		4CCF63051FC578A4009098D7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCF63031FC5788B009098D7 /* CFNetwork.framework */; };
+		4CCF63061FC578AA009098D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCF63041FC57892009098D7 /* SystemConfiguration.framework */; };
 		B0BB708FCD0AB742DD781DE8 /* Pods_LocationServiceExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E6A44782B2CF44B235B427 /* Pods_LocationServiceExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25FC3B9D27AF73634843CB6C /* Pods-LocationServiceExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationServiceExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationServiceExample/Pods-LocationServiceExample.release.xcconfig"; sourceTree = "<group>"; };
+		4C10E8F81FC6BA7800170838 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4C10E8FA1FC6BD4600170838 /* LocationNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNetwork.swift; sourceTree = "<group>"; };
+		4C10E8FE1FC6E49E00170838 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4C10E9001FC702E000170838 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4CCF62EE1FC4505E009098D7 /* LocationServiceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationServiceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCF62F11FC4505E009098D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCF62F31FC4505E009098D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		4CCF62F81FC4505E009098D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCF62FB1FC4505E009098D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CCF62FD1FC4505E009098D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCF63031FC5788B009098D7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4CCF63041FC57892009098D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B8A9DFD0F59082B7BEACC09 /* Pods-LocationServiceExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationServiceExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationServiceExample/Pods-LocationServiceExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E6A44782B2CF44B235B427 /* Pods_LocationServiceExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationServiceExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -33,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCF63061FC578AA009098D7 /* SystemConfiguration.framework in Frameworks */,
+				4CCF63051FC578A4009098D7 /* CFNetwork.framework in Frameworks */,
+				4C10E8FF1FC6E49E00170838 /* MapKit.framework in Frameworks */,
 				B0BB708FCD0AB742DD781DE8 /* Pods_LocationServiceExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +58,9 @@
 		33C794B28B2390E2693B7DE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C10E8FE1FC6E49E00170838 /* MapKit.framework */,
+				4CCF63041FC57892009098D7 /* SystemConfiguration.framework */,
+				4CCF63031FC5788B009098D7 /* CFNetwork.framework */,
 				A6E6A44782B2CF44B235B427 /* Pods_LocationServiceExample.framework */,
 			);
 			name = Frameworks;
@@ -75,6 +93,9 @@
 				4CCF62F81FC4505E009098D7 /* Assets.xcassets */,
 				4CCF62FA1FC4505E009098D7 /* LaunchScreen.storyboard */,
 				4CCF62FD1FC4505E009098D7 /* Info.plist */,
+				4C10E8F81FC6BA7800170838 /* API.swift */,
+				4C10E8FA1FC6BD4600170838 /* LocationNetwork.swift */,
+				4C10E9001FC702E000170838 /* LocationManager.swift */,
 			);
 			path = LocationServiceExample;
 			sourceTree = "<group>";
@@ -126,6 +147,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 						};
@@ -204,11 +228,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LocationServiceExample/Pods-LocationServiceExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/NSLogger/NSLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -223,7 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCF62F41FC4505E009098D7 /* ViewController.swift in Sources */,
+				4C10E8F91FC6BA7800170838 /* API.swift in Sources */,
+				4C10E9011FC702E000170838 /* LocationManager.swift in Sources */,
 				4CCF62F21FC4505E009098D7 /* AppDelegate.swift in Sources */,
+				4C10E8FB1FC6BD4600170838 /* LocationNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

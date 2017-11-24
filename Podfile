@@ -6,6 +6,9 @@ target 'LocationServiceExample' do
   use_frameworks!
 
   # Pods for LocationServiceExample
-  pod "NSLogger/Swift"
+  pod 'NSLogger/Swift'
+  #Networking
+  pod 'Moya-ObjectMapper'
+  pod 'Moya'
 
 end
